@@ -1,0 +1,127 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+.col-maxfull{
+    max-width: 100% !important;
+}
+.col-maxhalf{
+    max-width: 50% !important;
+}
+.col-maxthird{
+    max-width: 33.3333333% !important;
+}
+.col-third{
+    float: left;
+    width: 33.3333333% !important;
+}
+  
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.backgroundGame{
+    width: 1080px;
+    height: 720px;
+    border: 1px solid black;
+    background-image: url(/assets/img/background.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+.informationGame{
+    max-width: 100%;
+    height: auto;
+}
+.titleChoose{
+    color: lightgrey;
+    opacity: 0.9;
+    display: none;
+    margin: 1rem 0;
+}
+
+#gridContainer{
+    display: none;
+    margin: 8rem 8rem;
+    grid-gap: 2rem;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid__item{
+    padding: 1rem;
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    cursor: pointer;
+
+}
+.grid__item:hover{
+    background-color: lightblue;
+}
+
+img{
+    width: 40%;
+}
+
+h2{
+    color: rgb(109, 33, 33);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.startBtn{
+    width: 20%;
+    height: 10%;
+    border: 1px solid rgba(168, 167, 167, 5);
+    border-radius: 10px;
+    font-size: 2rem;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all .3s;
+    place-self: center;
+
+}
+
+.startBtn:hover{
+    width: 22%;
+    height: 11%;
+    font-size: 2.2rem;
+    background-color: lightgray;
+}
+
+.startBtn:active {
+    color: red;
+    outline-width: 0.2em;
+    animation: active 0.75s forwards
+  }
+  
+  @keyframes active {
+    to {
+      outline-offset: 0.2em;
+    }
+  }
+
+.game{
+    display: none;
+}
