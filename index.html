@@ -2,22 +2,43 @@
 <html>
     <head>
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend" rel="stylesheet">
     </head>
     <header>
 
     </header>
     <body>
-        <section class="container" id="container">
-            <h1>HangMan game</h1>
+        <section class="container flexCenter" id="container">
             <h2 class="titleChoose" id="titleChoose">Please choose an option</h2>
-            <div class="backgroundGame" id = "backgroundContainer">
+            <div class="backgroundGame flexCenter" id = "backgroundContainer">
+                <h1 id="titleGame">HangMan game</h1>
                 <button id="idStartBtn" class="startBtn" onclick="startGame()"><b>Start</b></button>
                 <div class="grid" id="gridContainer">
                 </div>
+                <div id="gameContainer" class="game">
+
                 </div>
-                <div class="game">
-                    
+
+                <div class="modal js-modal">
+                    <div class="modal-container flexCenter js-modal-container">
+                        <div class="modal-close js-modal-close">
+                            <i class="ti-close"></i>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alignCenter">
+                                <img id="result-image"></img>
+                            </div>
+                            <div id="result-text"></div>
+                            <div class="alignCenter">
+                                <button class="resetBtn js-reset-btn">Reset</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
+                </div>
+
 
         </section>
     </body>
